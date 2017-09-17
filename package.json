@@ -16,12 +16,14 @@
   "main": "n/a",
   "scripts": {
     "reset": "rm -rf node_modules && yarn install",
+    "link:athenaeum": "rm -rf node_modules/athenaeum && yarn link athenaeum",
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
+    "datocms-client": "^0.3.27",
     "prettier": "^1.6.1"
   }
 }
